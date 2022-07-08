@@ -124,6 +124,6 @@ cp -rv /usr/bin/ to ${destination}
 
 
 To copy all the items of a directory to another location with the folder
-cp -rv /usr/bin to ${destination}
--r = recursive
--v = variable(To see the variables)
+mv ${source} ${destination}
+
+

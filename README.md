@@ -167,3 +167,160 @@ To find the current version
 uname -r
 option
 -r = revision
+
+To see the user
+id ${username}
+User pasword and groups are stored in etc folder
+user 
+    -> passwd (/etc/)
+    -> group (/etc/)
+
+To check user details
+grep ${username} /etc/passwd
+student:x:1000:1000:tudent:/home/student:/bin/bash
+1st -username
+2nd - passwd
+3rd - uid
+4th - gid
+5th - command
+6th - location of home directory
+7th - name of the shell assigned to the user
+
+central auth
+    -AD for windows
+    -Ldap for linux
+
+group
+wheel::10:student
+1st - name of the group
+2nd - password
+3rd - group id
+4th - users that are part of the group
+
+grep user2 /etc/shadow
+/etc/shadow
+chuks:$8EuYko8Y9dWhj0:1906:1:99999:7:::
+1 - username
+2 - password hash (99999 - never expire)
+3 - last pass change date details
+4 - min days between password change 
+5 - pass expiration in days
+6 - warning days 
+7 - password inactive date
+8 - account inactive date
+
+How to change the detail above
+chage -l ${username} = list all details
+How to change the detail above
+chage  ${username} and follow the prompt
+
+To change the password of the root user
+sudo su - root
+passwd
+
+ldap - lightweight Directory Access Protocol
+
+To see your type of user
+which useradd
+
+To add a user
+sudo su - root
+useradd ${username}
+
+To set user password
+sudo passwd ${username}
+
+To add a user to a group
+usermod -G group1,group1 -u 2500 -c "comment" -s /usr/bin/sh ${username} 
+options
+-c = modify comments
+-g = modify primary group
+-G = modify secondary group
+-a = retain all secondary group
+-u = uid
+-s = shell
+-d = /${username}
+
+How to create a group
+groupadd ${groupname}
+To verify
+grep ${groupname} /etc/group
+
+How to delete a group
+groupdel ${groupname}
+
+To Delete a user
+userdel -r ${username}
+
+To open sudo file
+visudo
+
+Why Linux is secure
+1. file level security - permission(basic, ACL, Special)
+2. SElinux - what is happening inside OS
+3. firewall - filters network traffic
+
+Things attached to a file
+    who is the owner
+    who is the group owner
+    what are the permission on the file
+
+Permissions in linux
+read - r = 4
+write - w = 2
+execute - x = 1
+read-write - rw = 6
+read-execute - rx = 5
+read-write-execute - rwx = 7
+no permission - 0
+
+owner - u
+group - g
+others - o
+all - a
+
+To change user permission
+owner - oshabz - rw -rw
+group - oshabz - rw - r
+others         - r  - r
+
+To display information about a file
+stat ${filename}
+
+sudo chmode 660 ${filename}
+
+To change the group owner of a file
+chown ${owner_name}:${group_name} ${file_name};
+
+chaning and piping command
+use semicolon to chain commands
+cd new_folder; npm run start; code .
+
+Piping
+This takes output from left and use it as input on the right
+ls -l | grep rpc
+
+how to get number of character and words
+wc etc/passwd
+
+grep bash /etc/passwd | wc -l
+
+ls -l abc >out.txt 2> error.log
+
+single greater than(>) means replace the previous text
+grep bash /etc/passwd | wc -l > out.txt
+
+Double greater than(>) means append
+grep bash /etc/passwd | wc -l >> out.txt
+
+To save the error in error log
+grep bash /etc/passwd | wc -l >> out.txt 2>> error.log
+
+To Check the CPU
+lscpu
+
+To check RAM
+free -h
+
+
+

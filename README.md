@@ -101,3 +101,9 @@ Enter the password
 
 To remove everything inside a directory 
 rm -rf * directory_name
+
+To find a word in  a file
+grep ${search_word} ${file_path}
+
+To get the line number where the word appeared
+grep -n {search_word} ${file_path}

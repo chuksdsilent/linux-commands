@@ -128,3 +128,11 @@ mv ${source} ${destination}
 
 To create nexted directory
 mkdir -p directory/directory
+options
+-p = create parent directory
+
+To create alias
+alias ld='ls -al'
+
+To see all alias commands
+alias

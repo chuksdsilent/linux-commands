@@ -6,6 +6,7 @@ list all files and folders <br />
 ls -l /tmp
 ls - command
 -l - option
+-a = display hidden files
 /temp - argument
 
 To create a directory
@@ -101,3 +102,37 @@ Enter the password
 
 To remove everything inside a directory 
 rm -rf * directory_name
+
+To find a word in  a file
+grep ${search_word} ${file_path}
+
+To get the line number where the word appeared
+grep -n {search_word} ${file_path}
+options
+-i = ignore the case
+-n = show the line number
+-o = only occurance
+-v = ignore the word
+
+To copy from one location to another
+cp ${source} ${destination}
+
+To copy all the items of a directory to another location
+cp -rv /usr/bin/ to ${destination}
+-r = recursive
+-v = variable
+
+
+To copy all the items of a directory to another location with the folder
+mv ${source} ${destination}
+
+To create nexted directory
+mkdir -p directory/directory
+options
+-p = create parent directory
+
+To create alias
+alias ld='ls -al'
+
+To see all alias commands
+alias

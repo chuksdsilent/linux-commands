@@ -136,3 +136,34 @@ alias ld='ls -al'
 
 To see all alias commands
 alias
+
+VI Editor
+VI - Visual Instrument
+VIM - visual instrument improved
+
+- insert mode = to make changes (a, i  insert)
+- command mode = to save the file, close the file, show line number etc.
+To exist insert mode 
+esc key
+To Save file
+:w
+To quit
+:q
+To save and quit
+:wq
+To undo 
+press u
+To delete a line
+press d twice
+To display the line number
+:se nu
+To exit without saving
+:q!
+
+To know the name of your operating system
+cat /etc/os-release
+
+To find the current version
+uname -r
+option
+-r = revision

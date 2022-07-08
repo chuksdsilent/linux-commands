@@ -6,6 +6,7 @@ list all files and folders <br />
 ls -l /tmp
 ls - command
 -l - option
+-a = display hidden files
 /temp - argument
 
 To create a directory
@@ -112,3 +113,17 @@ options
 -n = show the line number
 -o = only occurance
 -v = ignore the word
+
+To copy from one location to another
+cp ${source} ${destination}
+
+To copy all the items of a directory to another location
+cp -rv /usr/bin/ to ${destination}
+-r = recursive
+-v = variable
+
+
+To copy all the items of a directory to another location with the folder
+cp -rv /usr/bin to ${destination}
+-r = recursive
+-v = variable(To see the variables)

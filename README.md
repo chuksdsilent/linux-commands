@@ -1,4 +1,4 @@
-Linux Commands
+## Linux Commands
 
 In Linux extions are not mandatory when creating a file in terminal
 

@@ -2,7 +2,7 @@
 
 In Linux extions are not mandatory when creating a file in terminal
 
-list all files and folders
+list all files and folders <br /> 
 ls -l /tmp
 ls - command
 -l - option
@@ -99,4 +99,5 @@ To give a user password
 sudo passwd ${username}
 Enter the password
 
-Welcome now
+To remove everything inside a directory 
+rm -rf * directory_name

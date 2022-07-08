@@ -126,4 +126,5 @@ cp -rv /usr/bin/ to ${destination}
 To copy all the items of a directory to another location with the folder
 mv ${source} ${destination}
 
-
+To create nexted directory
+mkdir -p directory/directory

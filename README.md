@@ -322,5 +322,15 @@ lscpu
 To check RAM
 free -h
 
+To check your computer serial number
+dmidecode -t1
 
+To know the disk status
+df -h
 
+To check the hard disk and ram in your system
+lsblk
+
+To mount a device
+sudo su - root
+mount ${source} ${destination}

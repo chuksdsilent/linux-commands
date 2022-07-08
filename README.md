@@ -107,3 +107,8 @@ grep ${search_word} ${file_path}
 
 To get the line number where the word appeared
 grep -n {search_word} ${file_path}
+options
+-i = ignore the case
+-n = show the line number
+-o = only occurance
+-v = ignore the word

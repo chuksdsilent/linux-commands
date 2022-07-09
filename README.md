@@ -248,7 +248,8 @@ grep user2 /etc/group
 
 ```
 
-output <br />
+Output
+
 `wheel::10:student`
 
 - 1st - name of the group
@@ -263,7 +264,8 @@ grep user2 /etc/shadow
 
 ```
 
-Output <br />
+Output
+
 chuks:$8EuYko8Y9dWhj0:1906:1:99999:7:::
 
 - 1 - username
@@ -275,19 +277,37 @@ chuks:$8EuYko8Y9dWhj0:1906:1:99999:7:::
 - 7 - password inactive date
 - 8 - account inactive date
 
+### How to change the detail above
+
+### list all details
+
+```
+chage -l ${username}
+
+```
+
 How to change the detail above
-chage -l ${username} = list all details
-How to change the detail above
+
+```
 chage ${username} and follow the prompt
 
+```
+
 To change the password of the root user
+
+```
 sudo su - root
-passwd
+
+```
 
 ldap - lightweight Directory Access Protocol
 
 To see your type of user
+
+```
 which useradd
+
+```
 
 To add a user
 sudo su - root

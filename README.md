@@ -2,44 +2,71 @@
 
 ### To list all files and folders
 
-`ls -al /tmp`
+```
+ls -al /tmp
+
+```
 
 - ls = command
 - -l = option
 - -a = display hidden files
 - /temp - argument
 
-### To create a directory
+To create a directory
 
-`mkdir directory_name`
+```
+mkdir directory_name
 
-### To remove a File
+```
 
-`rm file_name`
+```
+ To remove a File
 
-### To delete a directory
+```
 
-`rm -r directory_name`
+```
+rm file_name
+
+```
+
+To delete a directory
+
+```
+rm -r directory_name
+
+```
 
 -r - recursive
 
-### To remove empty directory
+To remove empty directory
 
-`rmdir directory_name`
+```
+rmdir directory_name
 
-### To Enter a directory
+```
 
-`cd directory_name`
+To Enter a directory
 
-### To know who loggedin into you system in the past
+```
+cd directory_name
 
-`last`
+```
 
-### To know your username
+To know who loggedin into you system in the past
 
-`whoami`
+```
+last
 
-### prompt
+```
+
+To know your username
+
+```
+whoami
+
+```
+
+Prompt
 
 [student@localhost ~]$ <br />
 
@@ -50,37 +77,58 @@
 
 * \# = loggedin user is root
 
-### To know who is looged in into the server
+To know who is looged in into the server
 
-`who`
+```
+who
 
-### To know what the user is doing
+```
 
-`w`
+To know what the user is doing
 
-### To know the name of your server
+```
+w
 
-`hostname`
+```
 
-### To know the kernel version of your system
+To know the name of your server
 
-`username -r`
+```
+hostname
+
+```
+
+To know the kernel version of your system
+
+```
+username -r
+
+```
 
 -r - revision number
 
-### To know the date/time in the serve
+To know the date/time in the serve
 
-`date`
+```
+date
 
-### To know the ip address of your server
+```
 
-`ip a`
+To know the ip address of your server
 
-### To check internet connectivity
+```
+ip a
 
-`ping google.com`
+```
 
-### To see all the command you typed
+To check internet connectivity
+
+```
+ping google.com
+
+```
+
+To see all the command you typed
 
 ```
 history

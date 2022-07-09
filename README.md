@@ -48,7 +48,7 @@
 - ~ = location
 - $ = loggedin user is a non root user
 
-* # = loggedin user is root
+* \# = loggedin user is root
 
 ### To know who is looged in into the server
 
@@ -197,41 +197,51 @@ VIM - visual instrument improved <br />
 ```
 
 To know the name of your operating system
-cat /etc/os-release
+`cat /etc/os-release`
 
 To find the current version
-uname -r
-option
--r = revision
+`uname -r`
+
+- -r = revision
 
 To see the user
-id ${username}
+`id ${username}`
+
+```
 User pasword and groups are stored in etc folder
 user
 -> passwd (/etc/)
 -> group (/etc/)
+```
 
 To check user details
+
+````
 grep ${username} /etc/passwd
 student:x:1000:1000:tudent:/home/student:/bin/bash
-1st -username
-2nd - passwd
-3rd - uid
-4th - gid
-5th - command
-6th - location of home directory
-7th - name of the shell assigned to the user
+```
+* 1st -username
+* 2nd - passwd
+* 3rd - uid
+* 4th - gid
+* 5th - command
+* 6th - location of home directory
+* 7th - name of the shell assigned to the user
 
-central auth
--AD for windows
--Ldap for linux
+central auth <br />
+-AD for windows <br />
+-Ldap for linux <br />
 
-group
-wheel::10:student
-1st - name of the group
-2nd - password
-3rd - group id
-4th - users that are part of the group
+To get user group details
+```grep user2 /etc/group```
+
+output
+```wheel::10:student```
+
+* 1st - name of the group
+* 2nd - password
+* 3rd - group id
+* 4th - users that are part of the group
 
 grep user2 /etc/shadow
 /etc/shadow
@@ -267,7 +277,7 @@ To set user password
 sudo passwd ${username}
 
 To add a user to a group
-usermod -G group1,group1 -u 2500 -c "comment" -s /usr/bin/sh ${username} 
+usermod -G group1,group1 -u 2500 -c "comment" -s /usr/bin/sh ${username}
 options
 -c = modify comments
 -g = modify primary group
@@ -382,3 +392,4 @@ Type of users
 root(Admin)
 non-root
 system/application
+````

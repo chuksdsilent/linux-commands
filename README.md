@@ -1,6 +1,6 @@
 # Linux Commands
 
-To list all files and folders
+### To list all files and folders
 
 `ls -al /tmp`
 
@@ -10,12 +10,15 @@ To list all files and folders
 - /temp - argument
 
 To create a directory
+
 `mkdir directory_name`
 
 To remove a File
+
 `rm file_name`
 
 To delete a directory
+
 `rm -r directory_name`
 
 -r - recursive

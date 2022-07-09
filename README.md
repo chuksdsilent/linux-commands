@@ -82,95 +82,152 @@
 
 ### To see all the command you typed
 
-`history`
+```
+history
 
-### To display present working directory
+```
 
-`pwd`
+To display present working directory
 
-### To move to root directory
+```
+pwd
 
-`cd / or cd ~`
+```
 
-### To switch user
+To move to root directory
 
-`su ${username}`
+```
+cd / or cd ~
 
-### To switch to root user
+```
 
-`su - root // This is not a good practice`
+To switch user
 
-### To switch to root
+```
+su ${username}
 
-`sudo su - root`
+```
+
+To switch to root user
+
+```
+su - root // This is not a good practice
+
+```
+
+To switch to root
+
+```
+sudo su - root
 
 su means switch user
 
-### To logout
+```
 
-`ctrl+d or logout or exit`
+To logout
 
-### To add a new user
+```
+ctrl+d or logout or exit
 
-`sudo useradd ${username}`
+```
+
+To add a new user
+
+```
+sudo useradd ${username}
+
+```
 
 Non-root users have limited priviledges - run limited command
 
-### To add a user
+To add a user
 
-`sudo useradd ${username}`
+```
+sudo useradd ${username}
+
+```
 
 when using sudo everything is logged.
 
-### To give a user password
+To give a user password
 
-`sudo passwd ${username}`
+```
+sudo passwd ${username}
 
-### To remove everything inside a directory
+```
 
-`rm -rf \* directory_name`
+To remove everything inside a directory
 
-### To find a word in a file
+```
+rm -rf \* directory_name
 
-`grep ${search_word} ${file_path}`
+```
 
-### To get the line number where the word appeared
+To find a word in a file
 
-`grep -n {search_word} ${file_path}`
+```
+grep ${search_word} ${file_path}
+
+```
+
+To get the line number where the word appeared
+
+```
+grep -n {search_word} ${file_path}
+
+```
 
 - -i = ignore the case
 - -n = show the line number
 - -o = only occurance
 - -v = ignore the word
 
-### To copy file from one location to another
+To copy file from one location to another
 
-`cp ${source} ${destination}`
+```
+cp ${source} ${destination}
 
-### To copy all the items of a directory to another location
+```
 
-`cp -rv ${source} to ${destination}`
+To copy all the items of a directory to another location
+
+```
+cp -rv ${source} to ${destination}
+
+```
 
 - -r = recursive
 - -v = variable
 
-### To copy all the items of a directory to another location with the folder
+To copy all the items of a directory to another location with the folder
 
-`mv ${source} ${destination}`
+```
+mv ${source} ${destination}
 
-### To create nested directory
+```
 
-`mkdir -p directory/directory`
+To create nested directory
+
+```
+mkdir -p directory/directory
+
+```
 
 - -p = create parent directory
 
-### To create alias
+To create alias
 
-`alias ld='ls -al'`
+```
+alias ld='ls -al'
 
-### To see all alias commands
+```
 
-`alias`
+To see all alias commands
+
+```
+alias
+
+```
 
 VI Editor <br />
 VI - Visual Instrument <br />
@@ -197,17 +254,17 @@ VIM - visual instrument improved <br />
   :q!
 ```
 
-### To know the name of your operating system
+To know the name of your operating system
 
 `cat /etc/os-release`
 
-### To find the current version
+To find the current version
 
 `uname -r`
 
 - -r = revision
 
-### To see the user
+To see the user
 
 `id ${username}`
 
@@ -218,7 +275,7 @@ user
 -> group (/etc/)
 ```
 
-### To check user details
+To check user details
 
 ```
 grep ${username} /etc/passwd
@@ -237,11 +294,7 @@ Output
 - 6th - location of home directory
 - 7th - name of the shell assigned to the user
 
-central auth <br />
--AD for windows <br />
--Ldap for linux <br />
-
-### To Know the user group
+To Know the user group
 
 ```
 grep user2 /etc/group
@@ -257,7 +310,7 @@ Output
 - 3rd - group id
 - 4th - users that are part of the group
 
-### To Know the user group
+To Know the user group
 
 ```
 grep user2 /etc/shadow
@@ -279,21 +332,21 @@ chuks:$8EuYko8Y9dWhj0:1906:1:99999:7:::
 
 ### How to change the detail above
 
-### list all details
+list all details
 
 ```
 chage -l ${username}
 
 ```
 
-### How to change the detail above
+How to change the detail above
 
 ```
-### chage ${username} and follow the prompt
+chage ${username} and follow the prompt
 
 ```
 
-### To change the password of the root user
+To change the password of the root user
 
 ```
 sudo su - root

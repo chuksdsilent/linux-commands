@@ -1,13 +1,15 @@
-## Linux Commands
+# Linux Commands
 
-In Linux extions are not mandatory when creating a file in terminal
+To list all files and folders
 
-list all files and folders <br /> 
-ls -l /tmp
-ls - command
--l - option
--a = display hidden files
-/temp - argument
+`ls -al /tmp`
+
+options
+
+- ls - command
+- -l - option
+- -a = display hidden files
+- /temp - argument
 
 To create a directory
 mkdir directory_name
@@ -37,6 +39,7 @@ student - username
 localhost - computer name
 ~ - location
 $ - loggedin user is a non root user
+
 # - loggedin user is root
 
 To know who is looged in into the server
@@ -78,8 +81,9 @@ To switch to root
 sudo su - root
 
 su means switch user
+
 - means load the environment
-root means arg
+  root means arg
 
 To logout
 ctrl+d or logout or exit
@@ -87,23 +91,20 @@ ctrl+d or logout or exit
 To add a new user
 sudo useradd ${username}
 
-Non-root users have limited priviledges
-	- run limited command
-	
+Non-root users have limited priviledges - run limited command
 To add a user
 sudo useradd ${username}
 
 when using sudo everything is logged.
 
-
 To give a user password
 sudo passwd ${username}
 Enter the password
 
-To remove everything inside a directory 
-rm -rf * directory_name
+To remove everything inside a directory
+rm -rf \* directory_name
 
-To find a word in  a file
+To find a word in a file
 grep ${search_word} ${file_path}
 
 To get the line number where the word appeared
@@ -121,7 +122,6 @@ To copy all the items of a directory to another location
 cp -rv /usr/bin/ to ${destination}
 -r = recursive
 -v = variable
-
 
 To copy all the items of a directory to another location with the folder
 mv ${source} ${destination}
@@ -141,24 +141,24 @@ VI Editor
 VI - Visual Instrument
 VIM - visual instrument improved
 
-- insert mode = to make changes (a, i  insert)
+- insert mode = to make changes (a, i insert)
 - command mode = to save the file, close the file, show line number etc.
-To exist insert mode 
-esc key
-To Save file
-:w
-To quit
-:q
-To save and quit
-:wq
-To undo 
-press u
-To delete a line
-press d twice
-To display the line number
-:se nu
-To exit without saving
-:q!
+  To exist insert mode
+  esc key
+  To Save file
+  :w
+  To quit
+  :q
+  To save and quit
+  :wq
+  To undo
+  press u
+  To delete a line
+  press d twice
+  To display the line number
+  :se nu
+  To exit without saving
+  :q!
 
 To know the name of your operating system
 cat /etc/os-release
@@ -171,9 +171,9 @@ option
 To see the user
 id ${username}
 User pasword and groups are stored in etc folder
-user 
-    -> passwd (/etc/)
-    -> group (/etc/)
+user
+-> passwd (/etc/)
+-> group (/etc/)
 
 To check user details
 grep ${username} /etc/passwd
@@ -187,8 +187,8 @@ student:x:1000:1000:tudent:/home/student:/bin/bash
 7th - name of the shell assigned to the user
 
 central auth
-    -AD for windows
-    -Ldap for linux
+-AD for windows
+-Ldap for linux
 
 group
 wheel::10:student
@@ -203,16 +203,16 @@ chuks:$8EuYko8Y9dWhj0:1906:1:99999:7:::
 1 - username
 2 - password hash (99999 - never expire)
 3 - last pass change date details
-4 - min days between password change 
+4 - min days between password change
 5 - pass expiration in days
-6 - warning days 
+6 - warning days
 7 - password inactive date
 8 - account inactive date
 
 How to change the detail above
 chage -l ${username} = list all details
 How to change the detail above
-chage  ${username} and follow the prompt
+chage ${username} and follow the prompt
 
 To change the password of the root user
 sudo su - root
@@ -256,14 +256,15 @@ To open sudo file
 visudo
 
 Why Linux is secure
+
 1. file level security - permission(basic, ACL, Special)
 2. SElinux - what is happening inside OS
 3. firewall - filters network traffic
 
 Things attached to a file
-    who is the owner
-    who is the group owner
-    what are the permission on the file
+who is the owner
+who is the group owner
+what are the permission on the file
 
 Permissions in linux
 read - r = 4
@@ -282,7 +283,7 @@ all - a
 To change user permission
 owner - oshabz - rw -rw
 group - oshabz - rw - r
-others         - r  - r
+others - r - r
 
 To display information about a file
 stat ${filename}
@@ -322,5 +323,26 @@ lscpu
 To check RAM
 free -h
 
+To check your computer serial number
+dmidecode -t1
 
+To know the disk status
+df -h
 
+To check the hard disk and ram in your system
+lsblk
+
+To mount a device
+sudo su - root
+mount ${source} ${destination}
+
+Ignore all lines that contains tmpfs
+df -h | grep -v tmpfs
+
+To check disc usage
+du -sh \*
+
+Type of users
+root(Admin)
+non-root
+system/application

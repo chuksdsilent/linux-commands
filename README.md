@@ -19,10 +19,7 @@ mkdir directory_name
 
 ```
 
-```
- To remove a File
-
-```
+To remove a File
 
 ```
 rm file_name

@@ -225,7 +225,7 @@ grep ${username} /etc/passwd
 
 ```
 
-output
+Output
 
 - student:x:1000:1000:tudent:/home/student:/bin/bash
 
@@ -241,10 +241,14 @@ central auth <br />
 -AD for windows <br />
 -Ldap for linux <br />
 
-To get user group details
-`grep user2 /etc/group`
+### To Know the user group
 
-output
+```
+grep user2 /etc/group
+
+```
+
+output <br />
 `wheel::10:student`
 
 - 1st - name of the group
@@ -252,17 +256,24 @@ output
 - 3rd - group id
 - 4th - users that are part of the group
 
+### To Know the user group
+
+```
 grep user2 /etc/shadow
-/etc/shadow
+
+```
+
+Output <br />
 chuks:$8EuYko8Y9dWhj0:1906:1:99999:7:::
-1 - username
-2 - password hash (99999 - never expire)
-3 - last pass change date details
-4 - min days between password change
-5 - pass expiration in days
-6 - warning days
-7 - password inactive date
-8 - account inactive date
+
+- 1 - username
+- 2 - password hash (99999 - never expire)
+- 3 - last pass change date details
+- 4 - min days between password change
+- 5 - pass expiration in days
+- 6 - warning days
+- 7 - password inactive date
+- 8 - account inactive date
 
 How to change the detail above
 chage -l ${username} = list all details

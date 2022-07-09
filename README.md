@@ -4,21 +4,20 @@ To list all files and folders
 
 `ls -al /tmp`
 
-options
-
-- ls - command
-- -l - option
+- ls = command
+- -l = option
 - -a = display hidden files
 - /temp - argument
 
 To create a directory
-mkdir directory_name
+`mkdir directory_name`
 
 To remove a File
-rm file_name
+`rm file_name`
 
 To delete a directory
-rm -r directory_name
+`rm -r directory_name`
+
 -r - recursive
 
 To remove empty directory

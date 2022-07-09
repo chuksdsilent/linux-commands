@@ -1,6 +1,6 @@
 # Linux Commands
 
-### To list all files and folders
+To list all files and folders
 
 ```
 ls -al /tmp

@@ -425,9 +425,13 @@ chown ${owner_name}:${group_name} ${file_name};
 
 ```
 
-chaning and piping command
+### Chaning and Piping command
+
 use semicolon to chain commands
+
+```
 cd new_folder; npm run start; code .
+```
 
 Piping
 This takes output from left and use it as input on the right

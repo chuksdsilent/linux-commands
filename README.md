@@ -9,141 +9,174 @@
 - -a = display hidden files
 - /temp - argument
 
-To create a directory
+### To create a directory
 
 `mkdir directory_name`
 
-To remove a File
+### To remove a File
 
 `rm file_name`
 
-To delete a directory
+### To delete a directory
 
 `rm -r directory_name`
 
 -r - recursive
 
-To remove empty directory
-rmdir directory_name
+### To remove empty directory
 
-To Enter a directory
-cd directory_name
+`rmdir directory_name`
 
-To know who loggedin into you system in the past
-last
+### To Enter a directory
 
-To know your username
-whoami
+`cd directory_name`
 
-prompt
-[student@localhost ~]$
-student - username
-localhost - computer name
-~ - location
-$ - loggedin user is a non root user
+### To know who loggedin into you system in the past
 
-# - loggedin user is root
+`last`
 
-To know who is looged in into the server
-who
+### To know your username
 
-To know what the user is doing
-w
+`whoami`
 
-To know the name of your server
-hostname
+### prompt
 
-To know the kernel version of your system
-username -r
+[student@localhost ~]$ <br />
+
+- student = username
+- localhost = computer name
+- ~ = location
+- $ = loggedin user is a non root user
+
+* # = loggedin user is root
+
+### To know who is looged in into the server
+
+`who`
+
+### To know what the user is doing
+
+`w`
+
+### To know the name of your server
+
+`hostname`
+
+### To know the kernel version of your system
+
+`username -r`
+
 -r - revision number
 
-To know the date/time in the serve
-date
+### To know the date/time in the serve
 
-To know the ip address of your server
-ip a
+`date`
 
-To check connectivity
-ping google.com
+### To know the ip address of your server
 
-To see all the command you typed
-history
+`ip a`
 
-To display present working directory
-pwd
+### To check internet connectivity
 
-To move to root directory
-cd / or cd ~
+`ping google.com`
 
-To switch user
-su ${username}
-su - root // This is not a good practice
+### To see all the command you typed
 
-To switch to root
-sudo su - root
+`history`
+
+### To display present working directory
+
+`pwd`
+
+### To move to root directory
+
+`cd / or cd ~`
+
+### To switch user
+
+`su ${username}`
+
+### To switch to root user
+
+`su - root // This is not a good practice`
+
+### To switch to root
+
+`sudo su - root`
 
 su means switch user
 
-- means load the environment
-  root means arg
+### To logout
 
-To logout
-ctrl+d or logout or exit
+`ctrl+d or logout or exit`
 
-To add a new user
-sudo useradd ${username}
+### To add a new user
+
+`sudo useradd ${username}`
 
 Non-root users have limited priviledges - run limited command
-To add a user
-sudo useradd ${username}
+
+### To add a user
+
+`sudo useradd ${username}`
 
 when using sudo everything is logged.
 
-To give a user password
-sudo passwd ${username}
-Enter the password
+### To give a user password
 
-To remove everything inside a directory
-rm -rf \* directory_name
+`sudo passwd ${username}`
 
-To find a word in a file
-grep ${search_word} ${file_path}
+### To remove everything inside a directory
 
-To get the line number where the word appeared
-grep -n {search_word} ${file_path}
-options
--i = ignore the case
--n = show the line number
--o = only occurance
--v = ignore the word
+`rm -rf \* directory_name`
 
-To copy from one location to another
-cp ${source} ${destination}
+### To find a word in a file
 
-To copy all the items of a directory to another location
-cp -rv /usr/bin/ to ${destination}
--r = recursive
--v = variable
+`grep ${search_word} ${file_path}`
 
-To copy all the items of a directory to another location with the folder
-mv ${source} ${destination}
+### To get the line number where the word appeared
 
-To create nexted directory
-mkdir -p directory/directory
-options
--p = create parent directory
+`grep -n {search_word} ${file_path}`
 
-To create alias
-alias ld='ls -al'
+- -i = ignore the case
+- -n = show the line number
+- -o = only occurance
+- -v = ignore the word
 
-To see all alias commands
-alias
+### To copy from one location to another
 
-VI Editor
-VI - Visual Instrument
-VIM - visual instrument improved
+`cp ${source} ${destination}`
 
-- insert mode = to make changes (a, i insert)
+### To copy all the items of a directory to another location
+
+`cp -rv /usr/bin/ to ${destination}`
+_-r = recursive
+_-v = variable
+
+### To copy all the items of a directory to another location with the folder
+
+`mv ${source} ${destination}`
+
+### To create nexted directory
+
+`mkdir -p directory/directory`
+
+- -p = create parent directory
+
+### To create alias
+
+`alias ld='ls -al'`
+
+### To see all alias commands
+
+`alias`
+
+VI Editor <br />
+VI - Visual Instrument <br />
+VIM - visual instrument improved <br />
+
+```
+- insert mode = to make changes (a, i insert) <br />
 - command mode = to save the file, close the file, show line number etc.
   To exist insert mode
   esc key
@@ -161,6 +194,7 @@ VIM - visual instrument improved
   :se nu
   To exit without saving
   :q!
+```
 
 To know the name of your operating system
 cat /etc/os-release

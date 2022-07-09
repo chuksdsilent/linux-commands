@@ -450,47 +450,98 @@ wc /etc/passwd
 
 ```
 
+To print out data in a file
+
+```
 ls -l abc >out.txt 2> error.log
 
+```
+
 single greater than(>) means replace the previous text
+
+```
 grep bash /etc/passwd | wc -l > out.txt
 
+```
+
 Double greater than(>) means append
+
+```
 grep bash /etc/passwd | wc -l >> out.txt
 
+```
+
 To save the error in error log
+
+```
 grep bash /etc/passwd | wc -l >> out.txt 2>> error.log
 
+```
+
 To Check the CPU
+
+```
 lscpu
 
+```
+
 To check RAM
+
+```
 free -h
 
+```
+
 To check your computer serial number
+
+```
 dmidecode -t1
 
+```
+
 To know the disk status
+
+```
 df -h
 
+```
+
 To check the hard disk and ram in your system
+
+```
 lsblk
 
+```
+
 To mount a device
+
+```
 sudo su - root
+
+```
+
+To mount drive
+
+```
 mount ${source} ${destination}
 
+```
+
 Ignore all lines that contains tmpfs
+
+```
 df -h | grep -v tmpfs
 
+```
+
 To check disc usage
+
+```
 du -sh \*
+
+```
 
 Type of users
 root(Admin)
 non-root
 system/application
-
-```
-
-```

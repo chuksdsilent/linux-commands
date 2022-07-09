@@ -143,21 +143,22 @@ when using sudo everything is logged.
 - -o = only occurance
 - -v = ignore the word
 
-### To copy from one location to another
+### To copy file from one location to another
 
 `cp ${source} ${destination}`
 
 ### To copy all the items of a directory to another location
 
-`cp -rv /usr/bin/ to ${destination}`
-_-r = recursive
-_-v = variable
+`cp -rv ${source} to ${destination}`
+
+- -r = recursive
+- -v = variable
 
 ### To copy all the items of a directory to another location with the folder
 
 `mv ${source} ${destination}`
 
-### To create nexted directory
+### To create nested directory
 
 `mkdir -p directory/directory`
 
@@ -196,15 +197,18 @@ VIM - visual instrument improved <br />
   :q!
 ```
 
-To know the name of your operating system
+### To know the name of your operating system
+
 `cat /etc/os-release`
 
-To find the current version
+### To find the current version
+
 `uname -r`
 
 - -r = revision
 
-To see the user
+### To see the user
+
 `id ${username}`
 
 ```
@@ -214,12 +218,14 @@ user
 -> group (/etc/)
 ```
 
-To check user details
+### To check user details
 
 ````
 grep ${username} /etc/passwd
-student:x:1000:1000:tudent:/home/student:/bin/bash
 ```
+output
+* student:x:1000:1000:tudent:/home/student:/bin/bash
+
 * 1st -username
 * 2nd - passwd
 * 3rd - uid

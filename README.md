@@ -220,34 +220,37 @@ user
 
 ### To check user details
 
-````
-grep ${username} /etc/passwd
 ```
-output
-* student:x:1000:1000:tudent:/home/student:/bin/bash
+grep ${username} /etc/passwd
 
-* 1st -username
-* 2nd - passwd
-* 3rd - uid
-* 4th - gid
-* 5th - command
-* 6th - location of home directory
-* 7th - name of the shell assigned to the user
+```
+
+output
+
+- student:x:1000:1000:tudent:/home/student:/bin/bash
+
+- 1st -username
+- 2nd - passwd
+- 3rd - uid
+- 4th - gid
+- 5th - command
+- 6th - location of home directory
+- 7th - name of the shell assigned to the user
 
 central auth <br />
 -AD for windows <br />
 -Ldap for linux <br />
 
 To get user group details
-```grep user2 /etc/group```
+`grep user2 /etc/group`
 
 output
-```wheel::10:student```
+`wheel::10:student`
 
-* 1st - name of the group
-* 2nd - password
-* 3rd - group id
-* 4th - users that are part of the group
+- 1st - name of the group
+- 2nd - password
+- 3rd - group id
+- 4th - users that are part of the group
 
 grep user2 /etc/shadow
 /etc/shadow
@@ -398,4 +401,7 @@ Type of users
 root(Admin)
 non-root
 system/application
-````
+
+```
+
+```

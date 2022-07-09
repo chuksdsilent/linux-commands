@@ -381,28 +381,31 @@ Why Linux is secure
 3. firewall - filters network traffic <br />
 
 Things attached to a file
-who is the owner <br />
-who is the group owner <br />
-what are the permission on the file <br />
+
+- who is the owner
+- who is the group owner
+- what are the permission on the file
 
 Permissions in linux
-read - r = 4 <br />
-write - w = 2 <br />
-execute - x = 1 <br />
-read-write - rw = 6 <br />
-read-execute - rx = 5 <br />
-read-write-execute - rwx = 7 <br />
-no permission - 0 <br />
 
-owner - u <br />
-group - g <br />
-others - o <br />
-all - a <br />
+- read - r = 4
+- write - w = 2
+- execute - x = 1
+- read-write - rw = 6
+- read-execute - rx = 5
+- read-write-execute - rwx = 7
+- no permission - 0
+
+- owner - u
+- group - g
+- others - o
+- all - a
 
 To change user permission
-owner - oshabz - rw -rw <br />
-group - oshabz - rw - r <br />
-others - r - r <br />
+
+- owner - oshabz - rw -rw
+- group - oshabz - rw - r
+- others - r - r
 
 To display information about a file
 

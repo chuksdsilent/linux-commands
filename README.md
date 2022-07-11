@@ -638,11 +638,35 @@ df -h | grep -v tmpfs
 To check disc usage
 
 ```
-du -sh \*
+du -sh \
+
+```
+
+To check disk in human readable form
+
+```
+df -h
 
 ```
 
 Type of users
-root(Admin)
-non-root
-system/application
+
+Root(Admin) <br />
+Non-root <br />
+system/application <br />
+
+- System user cn not login (because they dont have login shell. They are created for support of application)
+
+To check the number of users that can login
+
+```
+grep bash /etc/passwd | wc -l
+
+```
+
+To check the users who cant login
+
+```
+grep nologin /etc/passwd | wc -l
+
+```

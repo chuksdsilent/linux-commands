@@ -670,3 +670,24 @@ To check the users who cant login
 grep nologin /etc/passwd | wc -l
 
 ```
+
+Find is used to find and perform actions while locate can only output the search
+
+To find and perform an action
+
+```
+find ${start_search_from} ${options} ${what_to_find} ${what_action_to_take}
+
+```
+
+To search for a file
+
+```
+find / -name $(file_name.ext)
+```
+
+To search a file with permission
+
+```
+find /home -perm 644
+```

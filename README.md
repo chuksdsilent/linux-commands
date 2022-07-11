@@ -680,14 +680,46 @@ find ${start_search_from} ${options} ${what_to_find} ${what_action_to_take}
 
 ```
 
-To search for a file
+To search for a file/diectory
 
 ```
-find / -name $(file_name.ext)
+find / -name type  -d $(file_name.ext)
 ```
 
 To search a file with permission
 
 ```
-find /home -perm 644
+find /home type f -perm 644
+```
+
+To change the permission of a file with the file command
+
+```
+find / -type f -print -perm 666 -exec chmod 644 {} \;
+
+```
+
+To locate a file
+First update database by using the following command
+
+```
+updatedb
+```
+
+To locate a file
+
+```
+locate ${file_name}
+```
+
+To get date and time details
+
+```
+timedatectl
+```
+
+To create multiple file
+
+```
+touch filename{1..10}
 ```

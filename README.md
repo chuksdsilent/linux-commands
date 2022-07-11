@@ -700,6 +700,7 @@ find / -type f -print -perm 666 -exec chmod 644 {} \;
 ```
 
 To locate a file
+
 First update database by using the following command
 
 ```
@@ -718,7 +719,58 @@ To get date and time details
 timedatectl
 ```
 
-To create multiple file
+To create multiple files
+
+```
+touch filename{1..10}
+```
+
+Inodes are used to store file meta data like filename, file size etc
+
+To get inode folders
+
+```
+df -hi
+```
+
+Link is the same thing as shortcut
+
+Wildcard
+
+To delete file starting with a text
+
+```
+rm -f ${filename_starting_with}*
+
+```
+
+To copy files that start with a text
+
+```
+cp ${filename_starting_with}* ${location}
+```
+
+To delete all files in a folder
+
+```
+rm -f *
+```
+
+To display a file with a single character in filename
+
+```
+ls -l ?
+```
+
+To display filename starting with a range of character
+
+```
+ls -l [ax]*
+```
+
+This mean list all file name that start with a and also file name that start with x
+
+To create a range of files
 
 ```
 touch filename{1..10}

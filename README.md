@@ -780,7 +780,7 @@ touch filename{1..10}
 
 To check if ACL is applied to a file/Directory
 
-. = NO ACL is applied
+. = No ACL is applied
 
 - = ACL is applied
 
@@ -803,3 +803,33 @@ setfacl -m "g:${groupname}:rw-" ${filename}
 - m = username
 - u = user
 - g = group
+
+To remove ACL
+
+```
+setfacl -b
+```
+
+To check the process running in the background
+
+```
+ps -ef | grep sleep
+```
+
+To make your terminal sleep
+
+```
+sleep ${number of seconds}
+```
+
+### Special permission
+
+SUID - Set User ID (-rwsr-xr-x)
+
+- s = special
+
+To view diferrent groups
+
+```
+vi /etc/group
+```

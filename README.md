@@ -775,3 +775,31 @@ To create a range of files
 ```
 touch filename{1..10}
 ```
+
+### Access Control List(ACL)
+
+To check if ACL is applied to a file/Directory
+
+. = NO ACL is applied
+
+- = ACL is applied
+
+```
+getfacl ${filename}
+```
+
+To add ACL to a user
+
+```
+setfacl -m "u:${username}:rw-" ${filename}
+```
+
+To add ACL to a group
+
+```
+setfacl -m "g:${groupname}:rw-" ${filename}
+```
+
+- m = username
+- u = user
+- g = group

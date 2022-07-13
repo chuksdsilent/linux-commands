@@ -828,6 +828,29 @@ SUID - Set User ID (-rwsr-xr-x)
 
 - s = special
 
+To apply SUID
+
+```
+chmod u+s
+```
+
+SGID = Set Group ID
+
+To apply SGID
+
+```
+chmod g+s
+```
+
+Sticky = Everyone can create and remove their own files and not other people files
+
+To apply sticky
+
+```
+chmod o+t
+```
+
+To apply
 To view diferrent groups
 
 ```
